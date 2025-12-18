@@ -64,10 +64,28 @@ Configure the API key
 
 The script reads the API key from the environment variable `API_KEY`.
 
-Set it in your shell before running (zsh example):
+Set it in your shell before running (zsh example): or add it to a `.env` file if using `python-dotenv`.
 
 ```bash
 export API_KEY="your_webling_api_key_here"
+export BASE_LINK="your_webling_base_link_here"
+```
+
+Add `appointment.json`
+----------------------
+Create an `appointment.json` file in the repository root. You can use the following minimal example as a starting point (similar to sample_appointment.json):
+
+```json
+{
+  "properties": {
+	"title": "",
+	"begin": "",
+	"end": "",
+	"duration": 0,
+	"place": "",
+	"description": ""
+  }
+}
 ```
 
 Run the script

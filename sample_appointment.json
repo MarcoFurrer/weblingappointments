@@ -1,0 +1,43 @@
+{
+    "type": "calendarevent",
+    "meta": {
+        "created": null,
+        "createuser": {
+            "label": null,
+            "type": "apikey",
+            "id": null
+        },
+        "lastmodified": null,
+        "lastmodifieduser": {
+            "label": null,
+            "type": "user",
+            "id": null
+        }
+    },
+    "readonly": false,
+    "properties": {
+        "title": "[REDACTED]",
+        "description": "Trainingsleiter: [REDACTED] Hilfsleiter: [REDACTED]",
+        "place": "[REDACTED]",
+        "begin": null,
+        "end": null,
+        "duration": 60,
+        "isAllDay": false,
+        "isRecurring": false,
+        "status": "confirmed",
+        "recurrencePattern": null,
+        "enableParticipantSignup": true,
+        "enableParticipantMaybeState": false,
+        "isSignupBinding": false,
+        "maxParticipants": 35,
+        "signedupParticipants": 0,
+        "signupAllowedUntil": null,
+        "doAutoAcceptParticipants": true,
+        "questionSchema": "[{\"id\":1729189787625,\"type\":\"int\",\"title\":\"Personenanzahl\",\"description\":\"<p>Wie viele Personen meldest du an?<span class=\\\"fr-emoticon fr-deletable fr-emoticon-img\\\" style=\\\"background: url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.0.1/assets/svg/1f47b.svg);\\\">&nbsp;</span></p>\",\"required\":true,\"defaultValue\":1}]",
+        "showParticipationsInPortal": true,
+        "showAllAnswersInPortal": false
+    },
+    "parents": [],
+    "children": {},
+    "links": {}
+}

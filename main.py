@@ -3,7 +3,11 @@ import json
 import pandas as pd
 from time import sleep 
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 API_KEY = os.getenv("API_KEY")
+BASE_LINK = os.getenv("BASE_LINK")
 # Load JSON data
 with open('appointment.json', 'r') as file:
     json_data = json.load(file)
@@ -33,7 +37,7 @@ print(json.dumps(set_params(df, json_data)))
 def set_termin(df, json_data):
 
     # Correct API endpoint URL
-    url = f"https://slrgbaldeggersee.webling.ch/api/1/calendarevent?apikey={API_KEY}"
+    url = f"https://{BASE_LINK}/api/1/calendarevent?apikey={API_KEY}"
 
     # Post updated JSON data
     response = requests.post(url, json=json_data)
@@ -48,3 +52,4 @@ def set_termin(df, json_data):
 for i in range(len(df)):
     json_data = set_params(df, json_data, i)
     set_termin(df, json_data)
+    #break
